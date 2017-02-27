@@ -1,0 +1,59 @@
+@import "reset.css";
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    color: #225378;
+    background-color: #F3FFE2;
+    /*background-color: white;*/
+
+    line-height: 1.6em;
+}
+
+.header {
+    border-top: 0.5em solid #EB7F00;
+    border-bottom: 0.25em solid #ACF0F2;
+    padding: 1em 1em 0 1em;
+}
+
+.header__title {
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #EB7F00;
+}
+
+.header__subtitle {
+    font-weight: bold;
+    color: #225378;
+}
+
+.header__nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.header__nav-item {
+    flex-grow: 1;
+    font-weight: bold;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: #EB7F00;
+}
+
+.header__nav {
+    display: block;
+    /*border: 0.1em solid #ACF0F2;*/
+    width: 100%;
+    padding: 0.25em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.header__center {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 64em;
+}

@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Performance Optimisation - szybsze strony internetowe</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header>
-    <a href="">
-        <h1>Web Performance Optimisation</h1>
-        <h2>Szybsze strony internetowe</h2>
-    </a>
-    <nav>
-        <ul>
-            <li><a href="">Sylabus</a></li>
-            <li><a href="">FAQ</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <section class="header__center">
+        <a href="index.html">
+            <h1 class="header__title">Web Performance Optimisation</h1>
+            <h2 class="header__subtitle">Szybsze strony internetowe</h2>
+        </a>
+        <nav class="header__nav">
+            <ul class="header__nav-items">
+                <li class="header__nav-item"><a href="index.html">Główna</a></li>
+                <li class="header__nav-item"><a href="sylabus.html">Sylabus</a></li>
+                <li class="header__nav-item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </section>
 </header>
 
 %MAIN_CONTENT%
@@ -26,9 +30,9 @@
     <a href="">Kod strony (GitHub)</a>
     <nav>
         <ul>
-            <li><a href="">Główna</a></li>
-            <li><a href="">Sylabus</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="index.html">Główna</a></li>
+            <li><a href="sylabus.html">Sylabus</a></li>
+            <li><a href="faq.html">FAQ</a></li>
         </ul>
     </nav>
     <span>© 2017 Mateusz Kwaśniewski</span>
