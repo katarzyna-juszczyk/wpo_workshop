@@ -9,33 +9,40 @@
 </head>
 <body>
 <header class="header">
-    <section class="header__center">
+    <section class="center">
         <a href="index.html">
             <h1 class="header__title">Web Performance Optimisation</h1>
             <h2 class="header__subtitle">Szybsze strony internetowe</h2>
         </a>
-        <nav class="header__nav">
-            <ul class="header__nav-items">
-                <li class="header__nav-item"><a href="index.html">Główna</a></li>
-                <li class="header__nav-item"><a href="sylabus.html">Sylabus</a></li>
-                <li class="header__nav-item"><a href="faq.html">FAQ</a></li>
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="index.html">Główna</a></li>
+                <li class="nav__item"><a href="sylabus.html">Sylabus</a></li>
+                <li class="nav__item"><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
     </section>
 </header>
 
-%MAIN_CONTENT%
+<main class="main-content">
+    <section class="center">%MAIN_CONTENT%</section>
+</main>
 
-<footer>
-    <a href="">Kod strony (GitHub)</a>
-    <nav>
-        <ul>
-            <li><a href="index.html">Główna</a></li>
-            <li><a href="sylabus.html">Sylabus</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-        </ul>
-    </nav>
-    <span>© 2017 Mateusz Kwaśniewski</span>
+<footer class="footer">
+    <section class="center">
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="index.html">Główna</a></li>
+                <li class="nav__item"><a href="sylabus.html">Sylabus</a></li>
+                <li class="nav__item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <div class="copyright">
+            <div>© 2017 Mateusz Kwaśniewski</div>
+            <div><a href="">Kod strony (GitHub)</a></div>
+        </div>
+    </section>
 </footer>
 </body>
 </html>
