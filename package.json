@@ -2,7 +2,7 @@
   "scripts": {
     "clean": "rm -r dist/*",
     "generate:syllabus": "node build-scripts/generateTable.js > src/syllabus.html",
-    "build:css": "mkdir -p dist/css && cp -r src/css dist",
+    "build:css": "mkdir -p dist/css && postcss src/css/styles.css --use postcss-import --use cssnano -o dist/css/styles.css",
     "watch:css": "onchange src/css -- npm run build:css",
     "build:html": "node build-scripts/templateEngine.js",
     "watch:html": "onchange src/*.html -- npm run build:html",
@@ -11,7 +11,10 @@
     "watch": "npm-run-all --parallel watch:*"
   },
   "devDependencies": {
+    "cssnano": "3.10.0",
     "npm-run-all": "4.0.2",
-    "onchange": "3.2.1"
+    "onchange": "3.2.1",
+    "postcss-cli": "3.0.0-beta",
+    "postcss-import": "9.1.0"
   }
 }
