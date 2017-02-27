@@ -1,6 +1,6 @@
 {
   "scripts": {
     "clean": "rm dist/*",
-    "build:html": "node scripts/templateEngine.js"
+    "build:html": "node build-scripts/templateEngine.js"
   }
 }
