@@ -98,14 +98,20 @@ function sectionItem(item) {
     return `<li>${item}</li>`;
 }
 
-var result = Object.keys(data).map(function (section) {
+function section(name, items) {
     return `<section class="main-content__section">
-                <h2 class="main-content__section-header">${section}</h2>
+                <h2 class="main-content__section-header">${name}</h2>
                 <ul class="main-content__section-group">
-                  ${data[section].map(sectionItem).join("\n")}
+                  ${items.map(sectionItem).join("\n")}
                 </ul>
-            </section>`
-}).join("\n");
+            </section>`;
+}
 
-console.log(result);
+function renderToString(data) {
+    return Object.keys(data).map(function (name) {
+        return section(name, data[name]);
+    }).join("\n");
+}
+
+console.log(renderToString(data));
 
