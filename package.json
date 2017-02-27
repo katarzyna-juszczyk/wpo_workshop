@@ -1,6 +1,12 @@
 {
   "scripts": {
-    "clean": "rm dist/*",
-    "build:html": "node build-scripts/templateEngine.js"
+    "clean": "rm -r dist/*",
+    "build:css": "mkdir -p dist/css && cp -r src/css dist/css",
+    "build:html": "node build-scripts/templateEngine.js",
+    "prebuild": "npm run clean",
+    "build": "npm-run-all build:*"
+  },
+  "devDependencies": {
+    "npm-run-all": "4.0.2"
   }
 }
