@@ -49,7 +49,6 @@ body {
 
 .nav {
     display: block;
-    /*border: 0.1em solid #ACF0F2;*/
     width: 100%;
     padding: 0.25em;
     margin-top: 1em;
@@ -84,7 +83,6 @@ body {
 }
 
 .main-content__section-item em {
-    /*color: #EB7F00;*/
     font-weight: bold;
 }
 
@@ -110,8 +108,6 @@ body {
     font-size: 0.8em;
     padding: 0.5em 0;
     text-align: right;
-    /*color: #EB7F00;*/
-    /*background-color: #ACF0F2;*/
 }
 
 .copyright a {
