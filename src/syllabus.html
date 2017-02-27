@@ -1,0 +1,120 @@
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Ogólne techniki optymalizacji ładowania</h2>
+    <ul class="main-content__section-group">
+        <li>Performance golden rule</li>
+        <li>Bandwidth vs latency</li>
+        <li>Minifikacja zasobów</li>
+        <li>Kompresja (gzip, brotli)</li>
+        <li>HTTP cache (Cache-Control, ETag)</li>
+        <li>Service Workers - implementacja przykładowej strategii cache’owania</li>
+        <li>Resource hints (np. preload, prerender)</li>
+        <li>CDN</li>
+        <li>Reguła 14kB</li>
+        <li>HTTP/2 - wpływ na techniki optymalizacji</li>
+        <li>Client Side Render vs Server Side Render</li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Ładowanie CSS</h2>
+    <ul class="main-content__section-group">
+        <li>Blokowanie renderowania</li>
+        <li>Minifikacja (cssnano, csso)</li>
+        <li>Sekcja head</li>
+        <li>Skrócony zapis CSS</li>
+        <li>Płaskie selektory</li>
+        <li>Usuwanie nieużywanego CSS</li>
+        <li>Usuwanie duplikacji (csscss)</li>
+        <li>Mobile first jako technika optymalizacji</li>
+        <li>@import vs link</li>
+        <li>Krytyczny CSS (above the fold)</li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Ładowanie JS</h2>
+    <ul class="main-content__section-group">
+        <li>Blokowanie parsowania</li>
+        <li>Minifikacja (UglifyJS2)</li>
+        <li>Łączenie skryptów</li>
+        <li>Defer vs async</li>
+        <li>Defer vs skrypty na końcu body</li>
+        <li>Lekkie alternatywy dla popularnych bibliotek</li>
+        <li>Vanilla JS</li>
+        <li>Ahead-of-time template compilation</li>
+        <li>Bundle collapsing</li>
+        <li>Tree-shaking</li>
+        <li>Porównanie czasu ładowania popularnych frameworków JS</li>
+        <li>Porównanie bundlerów JS pod kątem wielkości plików</li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Ładowanie czcionek</h2>
+    <ul class="main-content__section-group">
+        <li>Wybór optymalnej czcionki</li>
+        <li>Konwersja typów czcionek (ttf2eot, ttf2woff, ttf2woff2)</li>
+        <li>Optymalna kaskada @font-face</li>
+        <li>Font subsetting (fontmin)</li>
+        <li>Flash of Unstyled Text vs Flash of Invisible Text</li>
+        <li>Nieblokujące ładowanie (font-display, Font Loading API)</li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Ładowanie obrazków</h2>
+    <ul class="main-content__section-group">
+        <li>Raster vs vector</li>
+        <li>Obrazki w HTML vs obrazki w CSS</li>
+        <li>img@srcset</li>
+        <li>picture</li>
+        <li>Optymalizacja JPEG i PNG (imagemin)</li>
+        <li>WebP (imagemin-webp)</li>
+        <li>Lazy loading (blazy)</li>
+        <li>Sprites (svg-sprite)</li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Animacje</h2>
+    <ul class="main-content__section-group">
+        <li>60fps</li>
+        <li>Jank i analiza wolnych ramek</li>
+        <li>Forced synchronous layout</li>
+        <li>requestAnimationFrame</li>
+        <li>Paint flashing</li>
+        <li>Animacje w osobnej warstwie</li>
+        <li>Animacje w CSS vs animacje w JS</li>
+        <li>Optymalizacje renderowania Virtual DOM (na przykładzie Elm i React)</li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Przeglądarka</h2>
+    <ul class="main-content__section-group">
+        <li>Critical Rendering Path</li>
+        <li>DOM</li>
+        <li>CSSOM</li>
+        <li>Render Tree</li>
+        <li>Layout</li>
+        <li>Paint</li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Metryki</h2>
+    <ul class="main-content__section-group">
+        <li>Time to First Byte</li>
+        <li>Time to First Paint</li>
+        <li>DOM Content Loaded</li>
+        <li>Time to First Meaningful Paint</li>
+        <li>Time to Interactive</li>
+        <li>Load Time</li>
+        <li>Speed Index</li>
+        <li>Performance budget</li>
+        <li>Analiza wykresów typu waterfall i flame chart</li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Narzędzia</h2>
+    <ul class="main-content__section-group">
+        <li>Chrome DevTools (Network, Timeline, Audits, Rendering)</li>
+        <li>npm jako narzędzie do budowania i automatyzacji optymalizacji</li>
+        <li>Narzędzia oparte o reguły (np. PageSpeed Insights)</li>
+        <li>Web Page Test</li>
+        <li>Continuous Web Performance Testing z webpagetest-api</li>
+    </ul>
+</section>

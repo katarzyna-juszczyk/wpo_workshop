@@ -86,6 +86,16 @@ body {
     font-weight: bold;
 }
 
+.main-content__section-group {
+    border-left: 0.5em solid #ACF0F2;
+    padding-left: 0.5em;
+    margin-top: 1em;
+}
+
+.main-content__section-group li {
+    margin: 0.8em 0;
+}
+
 .main-content__section-paragraph {
     padding: 0.4em 0;
 }
@@ -115,3 +125,4 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+

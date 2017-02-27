@@ -94,3 +94,18 @@ var data = {
     ]
 };
 
+function sectionItem(item) {
+    return `<li>${item}</li>`;
+}
+
+var result = Object.keys(data).map(function (section) {
+    return `<section class="main-content__section">
+                <h2 class="main-content__section-header">${section}</h2>
+                <ul class="main-content__section-group">
+                  ${data[section].map(sectionItem).join("\n")}
+                </ul>
+            </section>`
+}).join("\n");
+
+console.log(result);
+

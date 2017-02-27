@@ -1,6 +1,7 @@
 {
   "scripts": {
     "clean": "rm -r dist/*",
+    "generate:syllabus": "node build-scripts/generateTable.js > src/syllabus.html",
     "build:css": "mkdir -p dist/css && cp -r src/css dist",
     "watch:css": "onchange src/css -- npm run build:css",
     "build:html": "node build-scripts/templateEngine.js",
