@@ -8,6 +8,8 @@
     "watch:images": "onchange src/images -- npm run build:images",
     "build:manifest": "cp src/manifest.json dist/",
     "watch:manifest": "onchange src/manifest.json -- npm run build:manifest",
+    "build:sw": "cp src/sw.js dist/",
+    "watch:sw": "onchange src/sw.js -- npm run build:sw",
     "build:html": "node build-scripts/templateEngine.js",
     "watch:html": "onchange src/*.html -- npm run build:html",
     "prebuild": "npm run clean",
