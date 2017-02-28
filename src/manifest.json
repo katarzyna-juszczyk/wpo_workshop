@@ -1,9 +1,10 @@
 {
   "name": "Web Performance Optimisation - Szybsze strony internetowe",
+  "lang": "pl",
   "short_name": "WPO",
   "theme_color": "#acf0f2",
   "background_color": "#acf0f2",
-  "display": "browser",
+  "display": "standalone",
   "Scope": "/",
   "start_url": "/",
   "icons": [
