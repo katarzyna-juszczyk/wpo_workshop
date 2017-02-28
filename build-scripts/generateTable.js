@@ -32,7 +32,7 @@ var data = {
         "Defer vs skrypty na końcu body",
         "Lekkie alternatywy dla popularnych bibliotek",
         "Vanilla JS",
-        "Ahead-of-time template compilation",
+        "Prekompilacja szablonów",
         "Bundle collapsing",
         "Tree-shaking",
         "Porównanie czasu ładowania popularnych frameworków JS",

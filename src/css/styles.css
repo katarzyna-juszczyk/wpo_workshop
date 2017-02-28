@@ -90,6 +90,12 @@ body {
     border-left: 0.5em solid #ACF0F2;
     padding-left: 0.5em;
     margin-top: 1em;
+    transition: border-left .2s ease-out;
+
+}
+
+.main-content__section-group:hover {
+    border-left: 0.5em solid #1695A3;
 }
 
 .main-content__section-group li {
