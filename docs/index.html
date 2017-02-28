@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Szkolenie Web Performance Optimisation: Szybsze strony internetowe">
+    <meta name="theme-color" content="#acf0f2">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/icons/icon-72x72.png" sizes="72x72" type="image/png" />
+    <link rel="icon" href="images/icons/icon-96x96.png" sizes="96x96" type="image/png" />
+    <link rel="icon" href="images/icons/icon-144x144.png" sizes="144x144" type="image/png" />
+    <link rel="icon" href="images/icons/icon-192x192.png" sizes="192x192" type="image/png" />
+    <title>Web Performance Optimisation - szybsze strony internetowe</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+    <section class="center">
+        <a href="index.html">
+            <h1 class="header__title">Web Performance Optimisation</h1>
+            <h2 class="header__subtitle">Szybsze strony internetowe</h2>
+        </a>
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="index.html">Główna</a></li>
+                <li class="nav__item"><a href="syllabus.html">Sylabus</a></li>
+                <li class="nav__item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+<main class="main-content">
+    <section class="center"><section class="main-content__section">
+    <h2 class="main-content__section-header">Czego się nauczę?</h2>
+    <ul>
+        <li class="main-content__section-item">Znajdować wąskie gardła podczas <em>ładowania strony</em> oraz po jej załadowaniu w trakcie <em>animacji</em></li>
+        <li class="main-content__section-item">Optymalizować <em>HTML</em>, <em>JS</em>, <em>CSS</em>, <em>obrazki</em> oraz <em>czcionki</em></li>
+        <li class="main-content__section-item">Mierzyć rezultaty wprowadzanych optymalizacji</li>
+        <li class="main-content__section-item">Efektywnie korzystać z narzędzi tj. <em>Chrome DevTools</em> pod kątem optymalizacji stron internetowych</li>
+        <li class="main-content__section-item"><em>Automatyzować</em> powtarzalne optymalizacje</li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Dlaczego warto się tego nauczyć?</h2>
+    <ul>
+        <li class="main-content__section-item"><em>Zarabiaj więcej pieniędzy na swoich stronach.</em> <p>Szybsze serwisy to lepsze wrażenia użytkownika oraz wyższe rankingi SEO, które prowadzą do większej ilości konwersji</p></li>
+        <li class="main-content__section-item"><em>Oszczędzaj własne pieniądze.</em><p>Zoptymalizowane strony zużywają mniej zasobów serwerowych</p></li>
+        <li class="main-content__section-item"><em>Oszczędzaj pieniądze swoich użytkowników.</em> <p>Zoptymalizowane strony zużywają mniej zasobów tj. mobilny plan internetowy czy bateria w telefonie</p></li>
+        <li class="main-content__section-item"><em>Szanuj czas swoich użytkowników.</em> <p>Szybsze strony to wyraz szacunku dla czasu ludzi korzystających z naszych serwisów</p></li>
+        <li class="main-content__section-item"><em>Bądź dumny ze swojej pracy.</em> <p>Szybsze strony internetowe to źródło satysfakcji dla ich autorów</p></li>
+    </ul>
+</section>
+<section class="main-content__section">
+    <h2 class="main-content__section-header">Jaka jest forma tych zajęć?</h2>
+    <div class="main-content__days">3 dni warsztatów</div>
+    <p class="main-content__section-paragraph">Dziesiątki ćwiczeń praktycznych pokazujących niemal każdy aspekt optymalizacji.</p>
+    <p class="main-content__section-paragraph">Na starcie uczestnicy dostają stronę, która ładuje się w ponad 10 sekund w sieci 3G i stopniowo przyspieszamy ją schodząc poniżej 1 sekundy.</p>
+    <p class="main-content__section-paragraph">Następnie usprawniamy wszystkie animacje tak aby strona renderowała się płynnie nawet na starszych telefonach.</p>
+    <p class="main-content__section-paragraph">Gdy poznamy już klasyczne optymalizacje robimy analizę aplikacji zbudowanych z użyciem nowoczesnych frameworków takich jak React czy Elm.</p>
+    <p class="main-content__section-paragraph">Pod koniec szkolenia robimy audyt jednego z publicznie dostępnych serwisów internetowych pod kątem poznanych optymalizacji.</p>
+</section>
+</section>
+</main>
+
+<footer class="footer">
+    <section class="center">
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="index.html">Główna</a></li>
+                <li class="nav__item"><a href="syllabus.html">Sylabus</a></li>
+                <li class="nav__item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <div class="copyright">
+            <div>© 2017 Mateusz Kwaśniewski</div>
+            <div><a href="">Kod strony (GitHub)</a></div>
+        </div>
+    </section>
+</footer>
+<script>
+    if(navigator.serviceWorker) {
+        navigator.serviceWorker.register("sw.js");
+    }
+</script>
+</body>
+</html>

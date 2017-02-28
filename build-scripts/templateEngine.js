@@ -1,7 +1,7 @@
 var fs = require("fs");
 
 var inputDir = "src";
-var outputDir = "dist";
+var outputDir = "docs";
 var templateFile = "template.html";
 var extension = ".html";
 var placeholder = "%MAIN_CONTENT%";
