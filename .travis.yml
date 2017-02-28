@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "6"
+script: npm run build
+after_success: |
+  if [ -n "$GITHUB_API_KEY" ]; then
+    cd "$TRAVIS_BUILD_DIR"
+    cd docs
+    git init
+    git checkout -b gh-pages
+    git add .
+    git -c user.name='travis' -c user.email='travis' commit -m 'auto-generating page'
+    
+    git push -f -q https://kwasniew:$GITHUB_API_KEY@github.com/kwasniew/wpo_workshop-gh-pages gh-pages &2>/dev/null
+    cd "$TRAVIS_BUILD_DIR"
+  fi
