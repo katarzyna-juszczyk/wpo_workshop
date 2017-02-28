@@ -14,13 +14,16 @@
     "watch:html": "onchange src/*.html -- npm run build:html",
     "prebuild": "npm run clean && mkdir -p docs",
     "build": "npm-run-all build:*",
-    "watch": "npm-run-all --parallel watch:*"
+    "watch": "npm-run-all --parallel watch:*",
+    "test": "webpagetest test https://kwasniew.github.io/wpo_workshop/ --key=${WPT_KEY} --runs=3 --first --poll --timeout 120 --location='ec2-us-east-1:Chrome' --specs=test/perfBudget.json",
+    "travis": "npm-run-all --parallel build test"
   },
   "devDependencies": {
     "cssnano": "3.10.0",
     "npm-run-all": "4.0.2",
     "onchange": "3.2.1",
     "postcss-cli": "3.0.0-beta",
-    "postcss-import": "9.1.0"
+    "postcss-import": "9.1.0",
+    "webpagetest": "0.3.4"
   }
 }
