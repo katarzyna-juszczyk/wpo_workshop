@@ -10,7 +10,6 @@ after_success: |
     git checkout -b gh-pages
     git add .
     git -c user.name='travis' -c user.email='travis' commit -m 'auto-generating page'
-
     git push -f -q https://kwasniew:$GITHUB_API_KEY@github.com/kwasniew/wpo_workshop gh-pages &2>/dev/null
     cd "$TRAVIS_BUILD_DIR"
   fi
